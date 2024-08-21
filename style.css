@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.heading {
+  padding-bottom: 20px;
+  font-family: "Karla", sans-serif;
+  color: hsl(187, 24%, 22%);
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputContainer label {
+  color: hsl(187, 24%, 22%);
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+.inputContainer input {
+  padding: 10px 0 10px 0;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: hsl(187, 24%, 22%);
+
+  padding-left: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+input:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+input:focus {
+  border-color: hsl(169, 82%, 27%);
+}
+
+input:active {
+  border-color: hsl(169, 82%, 27%);
+}
+
+textarea {
+  height: 65px;
+  resize: none;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: hsl(187, 24%, 22%);
+  padding-top: 5px;
+  padding-left: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+textarea:focus {
+  border-color: hsl(169, 82%, 27%);
+}
+
+textarea:active {
+  border-color: hsl(169, 82%, 27%);
+}
+
+p {
+  visibility: hidden;
+  display: block;
+  color: hsl(0, 66%, 54%);
+}
+
+.radioBtnContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.radioBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid hsl(186, 15%, 59%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.radioBtn:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.radioBtn:focus {
+  border-color: hsl(169, 82%, 27%);
+  background-color: hsl(148, 38%, 91%);
+}
+
+.radioBtn:active {
+  border-color: hsl(169, 82%, 27%);
+  background-color: hsl(148, 38%, 91%);
+}
+
+.top {
+  margin-bottom: 10px;
+}
+
+.inputCheck {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+button {
+  padding: 15px 0 15px 0;
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.inputCheck {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 500px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .name {
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .radioBtnContainer {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .radioBtn {
+    width: 100%;
+  }
+
+  .top {
+    margin-bottom: 0;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}

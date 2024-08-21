@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="heading">Contact us</h1>
+      <form action="">
+        <div class="name">
+          <div class="inputContainer">
+            <label for="first_name">First Name *</label>
+            <input type="text" name="first_name" id="first_name" />
+            <p>This field is required</p>
+          </div>
+          <div class="inputContainer">
+            <label for="last_name">Last Name *</label>
+            <input type="text" name="last_name" id="last_name" />
+            <p>This field is required</p>
+          </div>
+        </div>
+        <div class="inputContainer">
+          <label for="email">Email Address *</label>
+          <input type="email" name="email" id="email" />
+          <p>Please enter a valid email address</p>
+        </div>
+
+        <div class="inputContainer">
+          <label for="query">Query Type *</label>
+          <div class="radioBtnContainer">
+            <div class="radioBtn top">
+              <input type="radio" name="query" id="general" value="general" />
+              <label for="general">General Enquiry</label>
+            </div>
+            <div class="radioBtn">
+              <input type="radio" name="query" id="support" value="support" />
+              <label for="general">Support Request</label>
+            </div>
+          </div>
+
+          <p>Please select a query type</p>
+        </div>
+        <div class="inputContainer">
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" cols="20"></textarea>
+          <p>This field is required</p>
+        </div>
+        <div class="inputCheck">
+          <div>
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree"
+              >I consent to being contacted by the team *</label
+            >
+          </div>
+          <p>To submit this form, please consent to being contacted</p>
+        </div>
+        <button type="submit" id="btn">submit</button>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
